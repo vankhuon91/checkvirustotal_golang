@@ -7,6 +7,7 @@ import (
 
 func InitLog() {
 	LOG_FILE := "log.txt"
+	os.Remove(LOG_FILE)
 	// open log file
 	logFile, err := os.OpenFile(LOG_FILE, os.O_APPEND|os.O_RDWR|os.O_CREATE, 0644)
 	if err != nil {

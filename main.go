@@ -11,19 +11,19 @@ import (
 
 func main() {
 	fmt.Println("---------------------------------------")
-	fmt.Println("1. Check hashs: [app] files [hashs.txt]")
-	fmt.Println("2. Check domains: [app] domains [domains.txt]")
-	fmt.Println("3. Check ips: [app] ip_address [ips.txt]")
+	fmt.Println("1. Check hashs in file [hashs.txt]: [app] files")
+	fmt.Println("2. Check domains in file [domains.txt]: [app] domains ")
+	fmt.Println("3. Check ips in file [ips.txt]: [app] ip_addresses ")
 
 	type_search := os.Args[1]
 	fileinput := "input.txt"
 	switch type_search {
 	case "domains":
 		fileinput = "domains.txt"
-	case "ips":
+	case "ip_addresses":
 		fileinput = "ips.txt"
-	case "ip_address":
-		fileinput = "ip_address.txt"
+	case "files":
+		fileinput = "hashs.txt"
 	}
 
 	logfile.InitLog()
@@ -51,6 +51,7 @@ func main() {
 	nLines := len(lines)
 	fmt.Println("Read file", fileinput)
 	fmt.Println("You have ", nLines, "lines", type_search)
+	fmt.Println("Output save in [log.txt]")
 	fmt.Print("Start check from line 1 ! Y/n? ")
 	editStart := ""
 	i := 1
@@ -62,8 +63,8 @@ func main() {
 	i = i - 1
 	times := 1
 	for i < nLines {
-		fmt.Println(times, ":", i, "/", nLines, lines[i])
-		err := virstotal.Search(type_search, lines[i], times)
+		fmt.Println(times, ":", i+1, "/", nLines, lines[i])
+		err := virstotal.Search(type_search, lines[i], i, times)
 		if err != nil {
 			//fmt.Println(err.Error())
 			time.Sleep(2 * time.Second)
