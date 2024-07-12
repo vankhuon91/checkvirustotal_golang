@@ -1,15 +1,1 @@
-2024/07/12 10:44:26 logfile.go:23: Start Logging
-2024/07/12 10:44:40 virustotal.go:49: www.cd4o.com Malicious 0 Totals 92
-2024/07/12 10:44:40 virustotal.go:49: www.ccleaner.com Malicious 0 Totals 92
-2024/07/12 10:44:49 virustotal.go:49: www.carbonite.com Malicious 0 Totals 92
-2024/07/12 10:44:50 virustotal.go:49: www.calendarxp.net Malicious 0 Totals 92
-2024/07/12 10:45:00 virustotal.go:49: www.burnaware.com Malicious 0 Totals 92
-2024/07/12 10:45:00 virustotal.go:49: www.bt.cn Malicious 0 Totals 92
-2024/07/12 10:45:10 virustotal.go:49: www.brother.com Malicious 0 Totals 92
-2024/07/12 10:45:10 virustotal.go:49: www.booking.com Malicious 0 Totals 92
-2024/07/12 10:45:20 virustotal.go:49: www.bluesofts.net Malicious 0 Totals 92
-2024/07/12 10:45:20 virustotal.go:49: www.blogger.com Malicious 0 Totals 92
-2024/07/12 10:45:30 virustotal.go:49: www.bingapis.com Malicious 0 Totals 92
-2024/07/12 10:45:30 virustotal.go:49: www.bing.com Malicious 0 Totals 92
-2024/07/12 10:45:40 virustotal.go:49: www.belluni.com Malicious 0 Totals 92
-2024/07/12 10:45:40 virustotal.go:49: www.beebeep.net Malicious 0 Totals 92
+2024/07/12 13:45:12 logfile.go:23: Start Logging

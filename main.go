@@ -16,7 +16,7 @@ func main() {
 	fmt.Println("3. Check ips in file [ips.txt]: [app] ip_addresses ")
 
 	type_search := os.Args[1]
-	fileinput := "input.txt"
+	fileinput := ""
 	switch type_search {
 	case "domains":
 		fileinput = "domains.txt"
@@ -24,6 +24,9 @@ func main() {
 		fileinput = "ips.txt"
 	case "files":
 		fileinput = "hashs.txt"
+	default:
+		fmt.Println("Chọn 1 trong 3 options : [app] files, domains, ip_addresses")
+		os.Exit(0)
 	}
 
 	logfile.InitLog()
